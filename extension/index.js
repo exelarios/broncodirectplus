@@ -1,11 +1,9 @@
-const coursesTable = document.getElementById("ACE_$ICField$4$$0");
-
 const PORTAL = "https://cmsweb.cms.cpp.edu/";
-
 // if (window.location.hostname !== PORTAL) {
 //   return null;
 // }
 
+const coursesTable = document.getElementById("ACE_$ICField$4$$0");
 if (!coursesTable) {
   console.warn("Failed to find courses from DOM");
 }
