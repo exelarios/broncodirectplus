@@ -1,4 +1,3 @@
-const path = require("path");
 const dotenv = require("dotenv");
 const axios = require("axios");
 
