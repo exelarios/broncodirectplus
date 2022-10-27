@@ -3,11 +3,16 @@
   "name": "BroncoDirect+",
   "description": "urmom",
   "version": "1.0",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": ["https://cmsweb.cms.cpp.edu/*"],
+      "js": ["./index.js"],
+      "all_frames": true
+    }
+  ],
   "action": {
     "default_popup": "index.html",
-    "default_icon": "hello_extensions.png"
-  },
-  "background": {
-    "service_worker": "index.js"
+    "default_title": "BroncoDirect+"
   }
 }
