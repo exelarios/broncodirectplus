@@ -1,3 +1,4 @@
+const path = require("path");
 const dotenv = require("dotenv");
 const axios = require("axios");
 
@@ -39,6 +40,12 @@ const TeacherQuery = `
     }
   }
 `;
+
+app.use(express.static("public"));
+
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/public/index.html");
+})
 
 app.post("/api/teachers", async (request, response) => {
   try {

@@ -1,2 +1,5 @@
 .env
 node_modules
+extension.crx
+extension.pem
+.DS_Store
