@@ -10,7 +10,7 @@ const app = express();
 const PORT = process.env.PORT || 5050;
 
 app.use(cors({
-  origin: "https://cmsweb.cms.cpp.edu"
+  origin: ["https://cmsweb.cms.cpp.edu", "https://vercel.app", "https://broncodirectplus.vercel.app/"]
 }));
 
 app.use(express.json());
